@@ -43,14 +43,14 @@ async function run(argv) {
       break
 
     case 'directory':
-      if (options.file[options.file.length] !== '/') options.file += '/'
+      if (options.file[options.file.length - 1] !== '/') options.file += '/'
       const globFiles = await glob(options.file + '**')
       const files = await asyncFilter(globFiles, isPathFile)
 
       await parallelMap(
         files,
         async (file) => {
-          const remoteFile = remote + file
+          const remoteFile = remote + file.replace(options.file, '')
           console.log(`uploading ${file} to ${remoteFile}`)
           return container.upload({ file, remote: remoteFile })
         },
