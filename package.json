@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flexdinesh/npm-module-boilerplate.git"
+    "url": "git+https://github.com/emanuelbsilva/cloudfiles-upload.git"
   },
   "keywords": [
     "boilerplate",
@@ -31,10 +31,6 @@
   ],
   "author": "Emanuel Silva <emanuelbsilva@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/flexdinesh/npm-module-boilerplate/issues"
-  },
-  "homepage": "https://github.com/flexdinesh/npm-module-boilerplate#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
