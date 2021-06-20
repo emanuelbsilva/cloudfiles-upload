@@ -28,11 +28,3 @@ cloudfiles-upload -u $RACKSPACE_USERNAME -k $RACKSPACE_API -r LON -f ./myfile.tx
 -r --region Cloud Files Region
 -o --output Output file path
 ```
-
-# Features
-
-- **ES6/ESNext** - Write _ES6_ code and _Babel_ will transpile it to ES5 for backwards compatibility
-- **Test** - _Mocha_ with _Istanbul_ coverage
-- **Lint** - Preconfigured _ESlint_ with _Airbnb_ config
-- **CI** - _TravisCI_ configuration setup
-- **Minify** - Built code will be minified for performance
