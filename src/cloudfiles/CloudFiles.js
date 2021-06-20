@@ -7,7 +7,7 @@ class CloudFiles {
       provider: 'rackspace',
       username,
       apiKey,
-      region,
+      region
     })
   }
 

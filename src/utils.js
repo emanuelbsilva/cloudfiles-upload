@@ -16,7 +16,7 @@ const isPathFile = async (file) => {
 }
 
 const ensureSlashAtThenEnd = (path) => {
-  return path[path.length - 1] == '/' ? path : path + '/'
+  return path[path.length - 1] === '/' ? path : path + '/'
 }
 
 const parallelMap = async (arr, f, n = Infinity, inPlace = false) => {
@@ -37,5 +37,5 @@ module.exports = {
   asyncFilter,
   isPathFile,
   ensureSlashAtThenEnd,
-  parallelMap,
+  parallelMap
 }

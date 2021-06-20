@@ -7,7 +7,7 @@ const {
   asyncFilter,
   isPathFile,
   ensureSlashAtThenEnd,
-  parallelMap,
+  parallelMap
 } = require('./utils')
 
 const CloudFiles = require('./cloudfiles/CloudFiles').CloudFiles
@@ -31,7 +31,7 @@ async function run(argv) {
   const container = new CloudFiles({
     username: options.username,
     apiKey: options.apikey,
-    region: options.region,
+    region: options.region
   }).getContainer(options.container)
 
   const pathType = await getPathType(options.file)

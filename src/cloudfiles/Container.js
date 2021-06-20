@@ -12,7 +12,7 @@ class Container {
 
       var dest = this.client.upload({
         container: this.container,
-        remote,
+        remote
       })
 
       dest.on('error', function (err) {
