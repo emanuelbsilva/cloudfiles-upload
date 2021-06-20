@@ -1,19 +1,19 @@
 const pkgcloud = require('pkgcloud')
-const { Container } = require('./Container')
+const Container = require('./Container').Container
 
-class CloudFiles {
-  constructor({ username, apiKey, region }) {
-    this.client = pkgcloud.storage.createClient({
-      provider: 'rackspace',
-      username,
-      apiKey,
-      region
-    })
+const CloudFiles = function ({ username, apiKey, region }) {
+  const client = pkgcloud.storage.createClient({
+    provider: 'rackspace',
+    username,
+    apiKey,
+    region
+  })
+
+  this.getContainer = function (container) {
+    return new Container({ client, container })
   }
 
-  getContainer(container) {
-    return new Container({ client: this.client, container })
-  }
+  return this
 }
 
 module.exports = { CloudFiles }
