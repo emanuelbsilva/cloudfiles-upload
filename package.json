@@ -58,6 +58,6 @@
   "dependencies": {
     "commander": "^7.2.0",
     "glob": "^7.1.7",
-    "pkgcloud": "^2.2.0"
+    "pkgcloud": "https://github.com/madarche/pkgcloud.git#fe2701eb6eb984e3d067d5df7610ca0751528dbd"
   }
 }
